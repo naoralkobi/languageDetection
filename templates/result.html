@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Detection Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        {% if error_message %}
+            <h1>Error:</h1>
+            <p>{{ error_message }}</p>
+        {% else %}
+            <h1>Language Detected:</h1>
+            <p>{{ predicted_language }}</p>
+        {% endif %}
+
+        <!-- Feedback Form -->
+        <form action="/feedback" method="post">
+            <label for="feedback">Provide Feedback:</label>
+            <textarea name="feedback" id="feedback" rows="4" cols="50"></textarea>
+            <input type="hidden" name="input_text" value="{{ input_text }}">
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <!-- Back Button -->
+        <a href="{{ url_for('index') }}" class="back-button">Back to Input</a>
+    </div>
+</body>
+</html>

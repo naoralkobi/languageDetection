@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Detection</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+
+</head>
+<body>
+<div>
+    <div class="container">
+        <h1>Language Detection</h1>
+        <form action="/detect" method="post">
+            <label for="input_text">Enter a Text:</label>
+            <textarea name="input_text" id="input_text" rows="4" cols="50"></textarea>
+            <button type="submit">Detect Language</button>
+        </form>
+    </div>
+    <div class="footer">
+        Created by Naor Alkobi
+    </div>
+
+</div>
+
+</body>
+</html>

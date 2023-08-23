@@ -1,0 +1,17 @@
+<!-- feedback.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Submitted</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <div class="feedback-container">
+        <h1>Thank you for your feedback!</h1>
+        <p>You indicated that the predicted language was: {{ feedback }}</p>
+        <a href="{{ url_for('index') }}" class="back-button">Back to Input</a>
+    </div>
+</body>
+</html>
