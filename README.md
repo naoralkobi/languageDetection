@@ -27,7 +27,7 @@ The Multinomial Naive Bayes classifier is a probabilistic algorithm that works w
 1. Clone this repository to your local machine using:
 
    ```bash
-   git clone 
+   git clone https://github.com/naoralkobi/languageDetection.git
    ```
 
 2. Navigate to the project directory:
@@ -51,7 +51,7 @@ The Multinomial Naive Bayes classifier is a probabilistic algorithm that works w
    ```
 
 2. Open your web browser and navigate to http://localhost:5000.
-
+   ![img.png](img.png)
 3. Enter the text you want to detect the language for and submit the form.
 
 ## Dataset
@@ -71,6 +71,8 @@ The program structure includes:
 ## Feedback Mechanism
 
 This program includes a feedback mechanism that allows users to correct the predicted language if it's incorrect. Feedback collected can be used to improve the model over time.
+
+![img_1.png](img_1.png)
 
 ## Contributing
 
