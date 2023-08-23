@@ -27,7 +27,7 @@ The Multinomial Naive Bayes classifier is a probabilistic algorithm that works w
 1. Clone this repository to your local machine using:
 
    ```bash
-   git clone https://github.com/your-username/language-detection.git
+   git clone 
    ```
 
 2. Navigate to the project directory:
