@@ -39,7 +39,9 @@ The Multinomial Naive Bayes classifier is a probabilistic algorithm that works w
 3. Install the required dependencies:
 
    ```bash
-   pip install -r requirements.txt
+   pip3 install virtualenv
+   virtualenv -p python3 venv
+   pip3 install -r requirements.txt
    ```
 
 ## Usage
